@@ -10,11 +10,32 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <CalendarView
+            android:id="@+id/calendarView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </CalendarView>
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Task">
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="CheckBox">
+        </CheckBox>
+
 
     </LinearLayout>
 

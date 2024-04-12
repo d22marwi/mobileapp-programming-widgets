@@ -1,35 +1,35 @@
+Efter en stunds planering beslöt jag mig för att göra en lätt variant av en ToDo-lista, 
+detta innefattar implementering av TextView, Calander, EditText och CheckBox. 
+Det första som implementerades en Vertikal layout i den existerande constraint layout, 
+jag satte en lämplig storlek på denna och även constraint till parent.
 
-# Rapport
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-**Skriv din rapport här!**
 
-_Du kan ta bort all text som finns sedan tidigare_.
+Efter detta lades TextView, CalendarView till, då det är en vertikal layout hamnar dessa under varandra. 
+Jag valde att lägga en horisontell layout i vertikala då jag ville att EditText och CheckBox skulle ligga bredvid varandra istället för under varandra. 
+När dessa var korrekt implementerade ändrade jag storlek på samtliga och lade till en margin.
 
-## Följande grundsyn gäller dugga-svar:
+       <EditText 
+            android:id="@+id/edittext" 
+            android:layout_width="250dp" 
+            android:layout_height="50dp" 
+            android:hint="Task" 
+            android:layout_marginStart="4dp" 
+            android:layout_marginTop="4dp" 
+            android:layout_marginEnd="4dp" 
+            android:layout_marginBottom="4dp"> 
+ 
+        </EditText> 
 
-- Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
-- Svaret skall ha minst en snutt programkod.
-- Svaret skall inkludera en kort övergripande förklarande text som redogör för vad respektive snutt programkod gör eller som svarar på annan teorifråga.
-- Svaret skall ha minst en skärmdump. Skärmdumpar skall illustrera exekvering av relevant programkod. Eventuell text i skärmdumpar måste vara läsbar.
-- I de fall detta efterfrågas, dela upp delar av ditt svar i för- och nackdelar. Dina för- respektive nackdelar skall vara i form av punktlistor med kortare stycken (3-4 meningar).
-
-Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad då den blir lättare att läsa vilket gör det lättare att hitta syntaktiska fel.
-
-```
-function errorCallback(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            // Geolocation API stöds inte, gör något
-            break;
-        case error.POSITION_UNAVAILABLE:
-            // Misslyckat positionsanrop, gör något
-            break;
-        case error.UNKNOWN_ERROR:
-            // Okänt fel, gör något
-            break;
-    }
-}
-```
 
 Bilder läggs i samma mapp som markdown-filen.
 

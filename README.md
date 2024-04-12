@@ -33,7 +33,7 @@ När dessa var korrekt implementerade ändrade jag storlek på samtliga och lade
 
 Bilder läggs i samma mapp som markdown-filen.
 
-![](android.png)
+![](1.png)
 
 Läs gärna:
 
